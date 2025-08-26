@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="received.php" onsubmit="return data()" method="post">
+    <h1>Registration Form </h1>
+    <p>Username:<input id="x1" name="username"></p>
+    <p>Password:<input id="x2" name="password"></p>
+    <p>Confirm password:<input id="x3" name="confirm"></p>
+    <p>Gender</p>
+    <label for="101">
+        <input type="radio" value="male" name="gender" id="101">Male
+    </label>
+    <br>
+    <label for="102">
+        <input type="radio" value="female" name="gender" for id="102">Female
+    </label>
+    <br>
+    <input type="submit" value="submit">
+</form>
+<script>
+    // it is important to return the value in the functions because if not returned it will take us to actionn file 
+    function data(){
+    var a = document.getElementById("x1").value;
+    var b = document.getElementById("x2").value;
+    var b = document.getElementById("x3").value;
+
+    if(a==""||b==""||c==""){
+        alert("all information must be filled:");
+        return false;
+    }
+    else if(b!=c){
+        alert("password does not match ");
+    }
+    return true;
+}
+
+    
+</script>
+
+    
+</body>
+</html>

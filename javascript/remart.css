@@ -1,0 +1,15 @@
+.header{
+    background-color: bisque;
+   padding: 0px;
+   margin-top: 0;
+    height: 70px;
+
+}
+.anchor{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    text-transform: uppercase;
+
+}

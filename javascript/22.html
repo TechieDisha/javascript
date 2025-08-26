@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> The addition of Two numbers</h1>
+    <script>
+        var a =10;
+        var b= 20;
+        var c = a + b;
+        document.write(c);
+
+    </script>
+    <br>
+    <script>
+    if(a>b)
+    document.write(a);
+else
+document.write(b);
+    </script>
+    <script>
+        for( var i=1;i<=10;i++){
+            document.write(i);
+            document.write("<br>");
+        }
+    </script>
+    <script>
+        var a="disha";
+        document.write(a.toLowerCase(a));
+    </script>
+    <script>
+        function square(a){
+            var b = a*a;
+            document.write("<h1>the square is:",b);
+        }
+        square(5);
+    </script>
+    <script>
+        function factorial(a){
+        if(a==0){
+            document.write("error occured");
+        }
+        else{
+            let fact=1;
+            for(var i =1;i<=a;i++){
+                fact=fact*i;
+            }
+            document.write("<h2>the factorial is "+fact);
+            }
+    }
+    factorial(5);
+    </script>
+    <script>
+        // confirm("all details to be filled properly");
+        // confirm("all details to be filled properly");
+    // </script>
+
+    <!-- <script> 
+    function showAlert(){
+        var d =confirm("do you want to continue");
+    
+    if(a=="true")
+    document.write("you have click on"+d);
+else
+document.write("you have clicked on "+d);
+    }
+    showAlert();
+    </script> -->
+    <script>
+    //  var k =  prompt("enter your name");
+    var k = prompt("enter any number");
+    var c=parseInt(k); //typecasting string to integer
+    document.write("your number is:"+c)
+    </script>
+   
+    
+    
+</body>
+</html>
